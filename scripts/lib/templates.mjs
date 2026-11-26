@@ -483,11 +483,11 @@ export function renderAbout({ site, html, headings = [] }) {
           </div>
         </div>
         <dl class="about-card__facts">
-          <div><dt>身份</dt><dd>开发者 / 写作者</dd></div>
-          <div><dt>关注</dt><dd>前端、设计、排版</dd></div>
+          <div><dt>身份</dt><dd>牛马人</dd></div>
+          <div><dt>e-mail</dt><dd>zheng25136@hotmail.com</dd></div>
           <div><dt>始于</dt><dd>${site.established}</dd></div>
         </dl>
-        <p class="about-card__quote">“把复杂的世界，拆成几个基本形状。”</p>
+        <p class="about-card__quote">“把复杂的世界，拆成几个基本形状。 ———— Deepseek”</p>
       </div>
       ${
         headings.length > 2

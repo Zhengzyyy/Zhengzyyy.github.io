@@ -66,7 +66,7 @@ export const site = {
     },
     about: {
       kicker: "关于 / ABOUT",
-      titleLines: ["三军可夺帅也，", "匹夫不可夺志也。"],
+      titleLines: ["没什么好写的", "这里先空着吧。"],
       body:
         "每日坚持更新，欢迎讨论。",
       linkLabel: "更多关于我",
