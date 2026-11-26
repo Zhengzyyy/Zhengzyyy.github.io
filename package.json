@@ -1,0 +1,21 @@
+{
+  "name": "zhengzyyy-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "郑泽阳的个人博客 · 原创至上主义视觉的静态站点",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs --no-watch",
+    "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
+    "marked": "^18.3.0"
+  }
+}

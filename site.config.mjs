@@ -1,0 +1,86 @@
+/**
+ * 站点全局配置。
+ * 修改这里即可更换站名、简介、导航、社交链接与页脚信息。
+ * 文章内容在 src/posts/ 中，关于页在 src/pages/about.md 中。
+ */
+export const site = {
+  title: "郑泽阳",
+  titleEn: "ZHENG ZEYANG",
+  wordmark: "ZZY",
+  tagline: "代码、设计与日常笔记。",
+  description:
+    "郑泽阳的个人博客。记录代码、设计、阅读与生活里那些值得多想一会儿的事。",
+  url: "https://zhengzyyy.github.io",
+  lang: "zh-CN",
+  locale: "zh_CN",
+  established: 2026,
+  author: {
+    name: "郑泽阳",
+    nickname: "Zhengzyyy",
+    email: "zheng25136@hotmail.com", // 替换成你希望公开的邮箱
+    github: "https://github.com/Zhengzyyy",
+    githubRepo: "https://github.com/Zhengzyyy/Zhengzyyy.github.io",
+  },
+  nav: [
+    { label: "首页", href: "/", key: "home" },
+    { label: "归档", href: "/archive/", key: "archive" },
+    { label: "标签", href: "/tags/", key: "tags" },
+    { label: "关于", href: "/about/", key: "about" },
+    { label: "搜索", href: "/search/", key: "search" },
+  ],
+  socials: [
+    { label: "GitHub", href: "https://github.com/Zhengzyyy", icon: "github" },
+    {
+      label: "邮箱",
+      href: "mailto:zheng25136@hotmail.com",
+      icon: "mail",
+    },
+    { label: "RSS", href: "/feed.xml", icon: "rss" },
+    // 想添加 X / 微博时，按下面的格式补一行即可：
+    // { label: "X", href: "https://x.com/yourname", icon: "arrow" },
+    // { label: "微博", href: "https://weibo.com/u/yourid", icon: "arrow" },
+  ],
+  // 首页、关于入口和订阅区的文案。
+  // {name} 会自动替换成上面的 author.name，{year} 会替换成当前年份。
+  home: {
+    hero: {
+      kicker: "个人博客",
+      title: {
+        before: "在秩序与",
+        accent: "偶然",
+        after: "之间",
+      },
+      lede:
+        "我是{name}，一名开发者。这里记录代码、设计、阅读，以及日常生活里那些值得多想一会儿的事。",
+      primary: { label: "阅读文章", href: "/archive/" },
+      secondary: { label: "关于我", href: "/about/" },
+      artCaption: "构图 № 1",
+      artNote: "2026 / 原创",
+      scrollHint: "向下阅读",
+      volume: "VOL. 01 — {year}",
+    },
+    latest: {
+      kicker: "写作 / WRITING",
+      title: "最新文章",
+      count: 7,
+    },
+    about: {
+      kicker: "关于 / ABOUT",
+      titleLines: ["把复杂的世界，", "拆成几个基本形状。"],
+      body:
+        "白天写代码，晚上读书和做笔记。相信好的设计来自克制，好的文字也是。这个博客用来存放那些不适合留在聊天记录里的东西。",
+      linkLabel: "更多关于我",
+    },
+    subscribe: {
+      kicker: "订阅 / FOLLOW",
+      titleLines: ["不定期更新，", "只写值得写下的。"],
+      body: "通过 RSS 阅读，或写信来聊点什么。",
+      rssLabel: "RSS 订阅",
+      emailLabel: "邮件联系",
+      githubLabel: "GitHub",
+    },
+  },
+  footerNote: "用静态站点与 Git 构建",
+  colophon:
+    "视觉语言取自卡济米尔·马列维奇的至上主义；页面中的几何构成均为本站原创，并非对既有画作的复刻。",
+};
