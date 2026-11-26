@@ -1,13 +1,57 @@
-title: Zhengzyyy 的博客
-wechat: Mr_zyzheng
-email: zheng25136@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  记录我的技术成长与生活点滴。
-baseurl: "" # 如果是个人主页仓库（用户名.github.io），这里留空
-url: "https://Zhengzyyy.github.io"
+# ==========================================
+# 1. 网站基础信息
+# ==========================================
+title: 郑泽阳 的博客
+email: your-email@example.com # 改成你的邮箱
+description: >- 
+  这个Blog是AI生成的，有点简陋但我觉得还可以。
+baseurl: "" # 个人主页仓库必须留空
+url: "https://Zhengzyyy.github.io" # 你的网站地址
 github_username:  Zhengzyyy
 
-# Build settings
+# ==========================================
+# 2. 主题与外观设置
+# ==========================================
 theme: minima
+
+# Minima 主题专属配置（换皮肤）
+minima:
+  skin: classic # 可选：classic (默认), dark, solarized, solarized-dark
+
+# 顶部导航栏链接（关联你根目录下的 md 文件）
+header_pages:
+  - categories.md
+#  - about.md # 如果你之后要建“关于”页面，这行不要删；暂时没有这个文件的话，先把它注释掉（前面加#）
+
+# ==========================================
+# 3. 插件配置
+# ==========================================
 plugins:
-  - jekyll-feed
+  - jekyll-feed        # 生成 RSS 订阅
+  - jekyll-sitemap     # 生成网站地图（利于 SEO）
+  - jekyll-seo-tag     # 优化网页头部的 SEO 信息
+  - jekyll-archives    # 自动生成分类/标签归档页
+
+# ==========================================
+# 4. 分类归档插件配置 (jekyll-archives)
+# ==========================================
+jekyll-archives:
+  enabled:
+    - categories       # 启用分类归档
+  layout: archive      # 指定使用 _layouts/archive.html 布局
+  permalinks:
+    category: '/category/:name/' # 分类页面的网址格式
+
+# ==========================================
+# 5. 构建与格式设置
+# ==========================================
+markdown: kramdown
+highlighter: rouge
+
+# 排除不需要 Jekyll 处理的文件，防止它们被展示在网页上
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
