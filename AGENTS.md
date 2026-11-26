@@ -1,6 +1,6 @@
 # 博客维护流程（给协作 Agent 使用）
 
-本文件是这个仓库的操作说明。其他 Agent 在修改博客前应先读本文件；面向人的内容说明在 [CONTENT.md](CONTENT.md)，环境与部署概览在 [README.md](README.md)。
+本文件是这个仓库的操作说明。其他 Agent 在修改博客前应先读本文件；面向人的内容说明在 [CONTENT.md](CONTENT.md)，环境与部署概览在 [README.md](README.md)。如果上下文有限，可以直接使用精简版 [AGENT-PROMPT.md](AGENT-PROMPT.md)。
 
 仓库：`https://github.com/Zhengzyyy/Zhengzyyy.github.io`
 线上地址：`https://zhengzyyy.github.io/`
